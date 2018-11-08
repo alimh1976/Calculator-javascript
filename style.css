@@ -1,0 +1,88 @@
+body,html{
+	height:100%;
+}
+
+body{
+	margin:0px;
+	background: rgba(227,227,227,1.00) url("asd.jpg") no-repeat left center/cover;
+}
+
+#Colculator{
+
+	width: 400px;
+	height: 500px;
+	margin:auto;
+
+	
+}
+
+.button-holder button{
+	float: left;
+	width: 25%;
+	display: block;
+	height: 125px;
+	color:#eee;
+	font-size: 17px;
+	font-weight:300;
+	background: rgba(13,64,92,1.00);
+	border: 1px solid rgba(41,158,164,1.00);
+}
+.button-holder button:active{
+	box-shadow:0px 0px 1px 1px #CDCDCD;
+}
+.calculate,.colculate-header,.answer{
+	height: 30px;
+	background: rgba(4,48,66,1.00);
+	border-bottom: 1px solid #fff;
+	box-sizing: border-box;
+	padding-left:10px;
+
+}
+.colculate-header{
+		border-radius: 15px 15px 0px 0px;
+
+}
+.calculate{
+	display: block;
+	width: 100%;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	color: #fff;
+	max-height: 100px;
+	min-height: 30px;
+	border-image: none;
+}
+
+.calculate::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 0.5; /* Firefox */
+}
+
+.calculate:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+}
+
+.calculate::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff;
+}
+@media screen and (max-width:768px){
+	#Colculator{
+
+	width: 492px;
+	height: 100%;
+
+	
+}
+
+}
+@media screen and (max-width:576px){
+	#Colculator{
+
+	width: 100%;
+
+
+	
+}
+
+}
