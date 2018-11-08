@@ -66,6 +66,10 @@ body{
 .calculate::-ms-input-placeholder { /* Microsoft Edge */
     color: #fff;
 }
+.error{
+	border: 2px solid rgba(252,17,20,1.00);
+	color: rgba(224,23,26,1.00);
+}
 @media screen and (max-width:768px){
 	#Colculator{
 

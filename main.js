@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 	//$(".calculate").keydown(function(e){
-	//		console.log(e.which);//to find out what is keycode of keyboards numbers and symbols
+	//		console.log(e.which);             //to find out what is keycode of keyboards numbers and symbols
 	//	});
 
 
@@ -107,14 +107,16 @@ $(document).ready(function () {
 	/*function for using computer keyboard*/
 
 
-	$(".calculate").keyup(function (e) {
-
-
-		if (e.which == 187 || e.which == 13) {
+$(".calculate").keyup(function (e) {
+	
+	
+			var $val = $(".calculate").val();
+			
+			if (e.which === 187 || e.which === 13) {
 
 			var firstPart,secondPart,answer = 0;
 
-			var $val = $(".calculate").val();
+			
 
 			
 
@@ -160,9 +162,25 @@ $(document).ready(function () {
 			
 			$(".calculate").val(" ");
 		}
+		
 
 
 	});
+
+//
+//$(".calculate").keydown(function () {
+//var $val = $(".calculate").val();
+//
+//		if(isNaN($val)){
+//			$(".calculate").addClass("error").val("you should just enter numbers");//validation
+//			
+//			
+//		}else{
+//			$(".calculate").removeClass("error");
+//		}
+//
+//
+//	});
 
 
 
